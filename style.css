@@ -1,0 +1,184 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.sub_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  color: blue;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+.navbar {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: 15% 60% 25%;
+  padding: 1.5rem 0 7rem;
+}
+
+.navbar .logo h2 {
+  font-size: 32px;
+}
+
+.navbar .search i {
+  font-size: 20px;
+}
+
+.navbar .menu_link li a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: #26272e;
+}
+
+.menu_link {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum_container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  padding: 0 0 4rem;
+  grid-template-areas: "side main";
+  gap: 4rem;
+}
+
+.sticky_container {
+  grid-area: side;
+}
+
+.content_area {
+  grid-area: main;
+}
+
+.content {
+  display: flex;
+  padding: 0 0 1rem;
+}
+
+.card-box {
+  background-image: url(./img/TheCollective_small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 5rem 0 5rem;
+}
+
+.footer_area {
+  display: flex;
+}
+
+.footer_text_area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_text_area .first {
+  padding: 0px 25px 0px 0px;
+}
+
+.footer_text_area .second {
+  padding: 0px 25px;
+}
+
+.footer_text_area .third {
+  padding: 0px 25px;
+}
+
+.left_footer {
+  margin-right: 6rem;
+}
+
+.right_footer {
+  margin-left: auto;
+}
+
+.advertisment {
+  width: 300px;
+}
+
+.main_sum_container {
+  margin: 0 0 4rem 0;
+  width: auto;
+  padding-right: 4rem;
+}
+
+.top_advertisment .img_section img {
+  width: 100%;
+}
+
+.content img {
+  margin: 0rem 1rem 1rem 0rem;
+}
+
+.top_advertisment {
+  background-color: black;
+}
+
+.top_advertisment .text_area p {
+  margin: 0;
+  padding: 20px;
+}
+
+.top_advertisment .text_area p a {
+  color: white;
+}
+
+.left_area .left_text_area {
+  color: #777;
+}
