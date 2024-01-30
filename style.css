@@ -276,7 +276,9 @@ footer {
 }
 
 .sub_title span,
-.sub_title span a {
+.sub_title span a,
+.pagination_text span,
+.pagination_text span a {
   color: rgb(130, 130, 130);
 }
 
@@ -345,24 +347,102 @@ footer {
   top: 2rem;
 }
 
-.footer_area h4{
+.footer_area h4 {
   letter-spacing: 0;
   font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.3;
 }
 
-.footer_area li{
+.footer_area li {
   margin: 0.5rem 0;
   text-transform: lowercase;
 }
 
-.footer_area li a{
+.footer_area li a {
   font-size: 16px;
 }
 
-.footer_area h2{
+.footer_area h2 {
   letter-spacing: 0;
   font-size: 1rem;
-  line-height: 1.3; 
+  line-height: 1.3;
+}
+
+.pagination_item {
+  grid-gap: 2rem;
+  padding: 0;
+  display: grid;
+  margin-bottom: 5rem;
+  justify-content: start;
+  grid-template-columns: 400px 1fr;
+}
+
+.pagination_item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+}
+
+.pagination_text {
+  position: relative;
+}
+
+.pagination_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.pagination ul {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination_area {
+  margin: 100px 0px;
+}
+
+.pagination {
+  padding: 2rem 0;
+}
+
+.pagination_text h2 a {
+  font-size: 24px;
+  letter-spacing: -0.72px;
+  line-height: 28.8px;
+}
+
+.section_text_area {
+  padding-right: 4rem;
+  width: auto;
+  margin: 0 2rem 0 0;
+}
+
+.pagination ul li a {
+  color: #595a5f;
+}
+
+.pagination ul li.active .current {
+  color: #000;
+}
+
+.pagination_footer span,
+.pagination_text span {
+  font-size: 13px;
+}
+
+.top_section h2 {
+  font-size: 32px;
+}
+.top_section p {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-right: 9rem;
+}
+
+.pagination_text p {
+  font-size: 16px;
+  color: rgb(38, 39, 46);
+  line-height: 24px;
 }
