@@ -26,4 +26,22 @@ $(document).ready(function () {
             items.hide().slice(showFrom, showTo).show();
         }
     });
+
+    var items = $(".sketches_text");
+    var numItems = items.length;
+    var perPage = 18;
+
+    items.slice(perPage).hide();
+
+    $('.pagination2').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "",
+        nextText: "",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
 });

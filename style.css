@@ -394,7 +394,8 @@ footer {
   bottom: 0;
 }
 
-.pagination ul {
+.pagination ul,
+.pagination2 ul {
   display: flex;
   gap: 20px;
 }
@@ -403,11 +404,13 @@ footer {
   margin: 100px 0px;
 }
 
-.pagination {
+.pagination,
+.pagination2 {
   padding: 2rem 0;
 }
 
-.pagination_text h2 a {
+.pagination_text h2 a,
+.sketches_text_area h2 {
   font-size: 24px;
   letter-spacing: -0.72px;
   line-height: 28.8px;
@@ -419,11 +422,13 @@ footer {
   margin: 0 2rem 0 0;
 }
 
-.pagination ul li a {
+.pagination ul li a,
+.pagination2 ul li a {
   color: #595a5f;
 }
 
-.pagination ul li.active .current {
+.pagination ul li.active .current,
+.pagination2 ul li.active .current {
   color: #000;
 }
 
@@ -432,17 +437,46 @@ footer {
   font-size: 13px;
 }
 
-.top_section h2 {
+.top_section h2,
+.sketches_header h2 {
   font-size: 32px;
 }
-.top_section p {
+.top_section p,
+.sketches_header p {
   font-size: 21px;
   line-height: 1.5;
   margin-right: 9rem;
 }
 
-.pagination_text p {
+.pagination_text p,
+.sketches_text_area p {
   font-size: 16px;
   color: rgb(38, 39, 46);
   line-height: 24px;
+}
+
+.sketches_content_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+
+.sketches_img img {
+  width: 100%;
+}
+
+.date,
+.sketches_text_area span {
+  margin: 0.5rem 0 1rem;
+  font-size: 14px !important;
+  color: rgb(130, 130, 130) !important;
+}
+
+.sketches_content {
+  margin-top: 6rem;
+}
+
+.footer_sketch p {
+  font-size: 0.9rem;
+  margin: 3rem 0;
 }
