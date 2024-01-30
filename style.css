@@ -480,3 +480,35 @@ footer {
   font-size: 0.9rem;
   margin: 3rem 0;
 }
+
+.sketches_header {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
+
+.sketches_right {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.sketches_right .carbon_copy {
+  display: flex;
+  align-items: center;
+}
+
+.carbon_copy a img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sketches_imgText {
+  padding: 0 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 21px;
+}
+
+.banner {
+  padding-top: 8px;
+  font-size: 11px;
+}
