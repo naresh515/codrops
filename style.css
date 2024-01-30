@@ -1,8 +1,19 @@
+@font-face {
+  font-family: interItalic;
+  src: url(./fonts/Inter-italic.var.woff2);
+}
+
+@font-face {
+  font-family: inter;
+  src: url(./fonts/Inter-upright.var.woff2);
+}
+
 body {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  font-family: inter;
 }
 
 .container {
@@ -32,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: #334bf7 !important;
 }
 
 ul {
@@ -46,6 +57,13 @@ li {
 
 img {
   cursor: pointer;
+}
+
+.inner {
+  margin: 0 auto;
+  padding: 0px 2rem;
+  max-width: 1350px;
+  position: relative;
 }
 
 .navbar {
@@ -108,10 +126,22 @@ img {
   padding: 0 0 1rem;
 }
 
-.card-box {
+.sticky_medium {
   background-image: url(./img/TheCollective_small.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  aspect-ratio: 1.8;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(1px 6px 7px hsla(246, 44.6%, 16.3%, 0.44));
+  border-radius: 12px;
+  gap: 0.5rem;
+  margin: 1.5rem auto 0;
+  max-width: 440px;
+}
+
+.card-box {
+  padding: 1.5rem;
 }
 
 footer {
@@ -146,6 +176,9 @@ footer {
 
 .right_footer {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .advertisment {
@@ -180,5 +213,156 @@ footer {
 }
 
 .left_area .left_text_area {
+  width: 140px;
+  height: 140px;
+  display: grid;
+  margin: 0;
+  place-items: center;
+  background: #000;
   color: #777;
+  font-size: 11px;
+  text-transform: lowercase;
+  font-family: "Inter var", sans-serif;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.right_area {
+  height: 140px;
+  width: 140px;
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+
+.medium_advertisment {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.show {
+  top: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f1f1f1;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.active {
+  transition: all 0.5s;
+  opacity: 1;
+  position: sticky;
+}
+
+.inner-show span .show_text {
+  display: block;
+  padding: 1rem 0 30px;
+  line-height: 1.5;
+  text-align: left;
+  color: rgb(38, 39, 46);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sub_title h2 a {
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(38, 39, 46);
+}
+
+.sub_title span,
+.sub_title span a {
+  color: rgb(130, 130, 130);
+}
+
+.stikcy_info h2 {
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(38, 39, 46);
+}
+
+.stikcy_info p,
+.stikcy_info span a,
+.sticky_footer p a {
+  font-size: 16px;
+  color: rgb(38, 39, 46);
+  line-height: 24px;
+}
+
+.stikcy_info span a {
+  text-decoration: underline;
+}
+
+.content .sub_title p span {
+  color: rgb(236, 105, 84);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.show_small {
+  padding: 6px 8px;
+  background: #d7d7d7;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.512rem;
+  line-height: 1;
+  border-radius: 0;
+}
+
+.card-box form {
+  display: flex;
+}
+
+.card-box form input {
+  padding: 1rem;
+  border: 1px solid #000;
+  background: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+}
+
+.card-box form button {
+  border-radius: 0 4px 4px 0;
+  height: 3.5rem;
+  border: 1px solid #000;
+  padding: 0 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: -5px;
+}
+
+.container_sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+.footer_area h4{
+  letter-spacing: 0;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.footer_area li{
+  margin: 0.5rem 0;
+  text-transform: lowercase;
+}
+
+.footer_area li a{
+  font-size: 16px;
+}
+
+.footer_area h2{
+  letter-spacing: 0;
+  font-size: 1rem;
+  line-height: 1.3; 
 }
