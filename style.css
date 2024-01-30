@@ -512,3 +512,8 @@ footer {
   padding-top: 8px;
   font-size: 11px;
 }
+
+.bg_img {
+  background: url(./img/lineart.svg) no-repeat 68% -5%;
+  background-size: 37%;
+}
