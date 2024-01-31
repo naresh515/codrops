@@ -12,11 +12,13 @@ $(document).ready(function () {
   $(".toggle").click(function () {
     $(".toggle").toggleClass("is-active");
     $(".menu").toggleClass("open");
+    $("body").toggleClass("scroll")
   });
 
   $(".menu_link li a").click(function () {
     $(".menu").removeClass("open");
     $(".toggle").removeClass("is-active");
+    $("body").removeClass("scroll")
   });
 
   var items = $(".pagination_item");
