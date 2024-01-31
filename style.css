@@ -637,18 +637,22 @@ footer {
     max-width: 100%;
   }
 
-  .card-box input{
+  .card-box input {
     padding: 0;
     height: 3rem;
     text-indent: 20px;
   }
 
-  .card-box button{
+  .card-box button {
     height: 3.1rem;
   }
 
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-between;
+  }
+
+  .advertisment {
+    width: 100%;
   }
 }
