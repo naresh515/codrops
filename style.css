@@ -126,22 +126,14 @@ img {
   padding: 0 0 1rem;
 }
 
-.sticky_medium {
+.bg_sticky {
   background-image: url(./img/TheCollective_small.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   aspect-ratio: 1.8;
-  display: flex;
-  flex-direction: column;
   filter: drop-shadow(1px 6px 7px hsla(246, 44.6%, 16.3%, 0.44));
   border-radius: 12px;
-  gap: 0.5rem;
-  margin: 1.5rem auto 0;
-  max-width: 440px;
-}
-
-.card-box {
-  padding: 1.5rem;
+  margin: 1.5rem auto;
 }
 
 footer {
@@ -318,11 +310,13 @@ footer {
   border-radius: 0;
 }
 
-.card-box form {
+.card-box {
   display: flex;
+  padding: 1.5rem;
+  align-items: center;
 }
 
-.card-box form input {
+.card-box input {
   padding: 1rem;
   border: 1px solid #000;
   background: #fff;
@@ -332,7 +326,7 @@ footer {
   outline: none;
 }
 
-.card-box form button {
+.card-box button {
   border-radius: 0 4px 4px 0;
   height: 3.5rem;
   border: 1px solid #000;
@@ -516,4 +510,145 @@ footer {
 .bg_img {
   background: url(./img/lineart.svg) no-repeat 68% -5%;
   background-size: 37%;
+}
+
+.sketches_header p a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1.5rem 0 5rem;
+  }
+
+  .footer_area {
+    display: block;
+    text-align: center;
+  }
+
+  .left_footer {
+    margin-right: 0;
+  }
+
+  .footer_text_area {
+    display: block;
+    text-align: center;
+  }
+
+  .footer_text_area .first,
+  .footer_text_area .second,
+  .footer_text_area .third {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_area h4 {
+    margin: 2rem 0 1rem;
+    font-size: 1rem;
+  }
+
+  .footer_area li a {
+    font-size: 14px;
+  }
+
+  .top_section h2,
+  .sketches_header h2 {
+    font-size: 28px;
+  }
+
+  .top_section p,
+  .sketches_header p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .sketches_header,
+  .sketches_content_area,
+  .section_container,
+  .pagination_item {
+    display: block;
+  }
+
+  .sketches_right {
+    margin-top: 3rem;
+  }
+
+  .inner {
+    padding: 0 1rem;
+    max-width: auto;
+  }
+
+  .section_text_area {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination_text h2 a {
+    font-size: 18px;
+  }
+
+  .pagination_text p {
+    font-size: 15px;
+  }
+  .pagination_footer,
+  .container_sticky {
+    position: unset;
+  }
+
+  .pagination,
+  .pagination2 {
+    padding: 0;
+  }
+
+  .pagination_area {
+    margin: 10px 0px;
+  }
+
+  .sum_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    grid-template-areas: "main" "side";
+  }
+
+  .main_sum_container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub_title h2 a {
+    font-size: 18px;
+  }
+
+  .sub_title span,
+  .sub_title span a,
+  .pagination_text span,
+  .pagination_text span a {
+    font-size: 12px;
+  }
+
+  .bg_sticky {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-box input{
+    padding: 0;
+    height: 3rem;
+    text-indent: 20px;
+  }
+
+  .card-box button{
+    height: 3.1rem;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
 }
