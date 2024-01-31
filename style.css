@@ -711,7 +711,11 @@ footer {
     right: 0;
   }
 
-  .scroll{
+  .scroll {
     overflow: hidden;
+  }
+
+  .bottom_advertisment img {
+    width: 100%;
   }
 }
