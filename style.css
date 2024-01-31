@@ -516,6 +516,10 @@ footer {
   text-decoration: underline;
 }
 
+.toggle {
+  display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 800px) {
   .menu {
     display: none;
@@ -654,5 +658,56 @@ footer {
 
   .advertisment {
     width: 100%;
+  }
+
+  .toggle {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toggle span {
+    height: 1px;
+    width: 20px;
+    display: block;
+    background: black;
+    margin-bottom: 9.5px;
+  }
+
+  .toggle.is-active .line1 {
+    transform: translateY(9px) rotate(50deg);
+  }
+
+  .toggle.is-active .line2 {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+  }
+
+  .toggle.is-active .line3 {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  .toggle span:last-child {
+    margin-bottom: 0px;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .open .menu_link {
+    flex-direction: column;
+    position: absolute;
+    z-index: 9;
+    background: white;
+    left: 0;
+    top: 100px;
+    height: 100vh;
+    justify-content: unset;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    gap: 30px;
+    right: 0;
   }
 }

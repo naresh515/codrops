@@ -9,39 +9,49 @@ $(document).ready(function () {
     }
   });
 
+  $(".toggle").click(function () {
+    $(".toggle").toggleClass("is-active");
+    $(".menu").toggleClass("open");
+  });
+
+  $(".menu_link li a").click(function () {
+    $(".menu").removeClass("open");
+    $(".toggle").removeClass("is-active");
+  });
+
   var items = $(".pagination_item");
-    var numItems = items.length;
-    var perPage = 9;
+  var numItems = items.length;
+  var perPage = 9;
 
-    items.slice(perPage).hide();
+  items.slice(perPage).hide();
 
-    $('.pagination').pagination({
-        items: numItems,
-        itemsOnPage: perPage,
-        prevText: "",
-        nextText: "&#8250",
-        onPageClick: function (pageNumber) {
-            var showFrom = perPage * (pageNumber - 1);
-            var showTo = showFrom + perPage;
-            items.hide().slice(showFrom, showTo).show();
-        }
-    });
+  $(".pagination").pagination({
+    items: numItems,
+    itemsOnPage: perPage,
+    prevText: "",
+    nextText: "&#8250",
+    onPageClick: function (pageNumber) {
+      var showFrom = perPage * (pageNumber - 1);
+      var showTo = showFrom + perPage;
+      items.hide().slice(showFrom, showTo).show();
+    },
+  });
 
-    var items = $(".sketches_text");
-    var numItems = items.length;
-    var perPage = 18;
+  var items = $(".sketches_text");
+  var numItems = items.length;
+  var perPage = 18;
 
-    items.slice(perPage).hide();
+  items.slice(perPage).hide();
 
-    $('.pagination2').pagination({
-        items: numItems,
-        itemsOnPage: perPage,
-        prevText: "",
-        nextText: "",
-        onPageClick: function (pageNumber) {
-            var showFrom = perPage * (pageNumber - 1);
-            var showTo = showFrom + perPage;
-            items.hide().slice(showFrom, showTo).show();
-        }
-    });
+  $(".pagination2").pagination({
+    items: numItems,
+    itemsOnPage: perPage,
+    prevText: "",
+    nextText: "",
+    onPageClick: function (pageNumber) {
+      var showFrom = perPage * (pageNumber - 1);
+      var showTo = showFrom + perPage;
+      items.hide().slice(showFrom, showTo).show();
+    },
+  });
 });
