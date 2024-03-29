@@ -312,8 +312,9 @@ footer {
 
 .card-box {
   display: flex;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   align-items: center;
+  justify-content: center;
 }
 
 .card-box input {
